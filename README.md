@@ -4,7 +4,7 @@ RAN NDT OF A URBAN SCENARIO
 
 DESCRIPTION OF THE MAIN SCRIPTS
 
-This RAN NDT simulates a urban scenario where a number of base stations are deployed providing service to different User Equipments (UE). 
+This RAN NDT simulates a urban scenario where a number of base stations are deployed providing service to different User Equipments (UE). It is implemented in Matlab.
 The main scripts and functions included in the code are:
 
 - create_scenario.m: This script allows creating a scenario with a given number of buildings, streets, etc. Normally, this only needs to be executed once and it creates a file “ScenarioBuildings.mat” to be used in the different simulations.
@@ -21,7 +21,7 @@ EXECUTION PROCEDURE:
 Step 1) Create the scenario with the buildings and the trajectories:
 - Configure the scenario size and the buildings positions at: create_scenario.m
 - Configure the streets for pedestrian and cars and the pedestrian random walk areas at mobility_regions.m
-- Execute script:  create_scenario.m   (this already calls mobility_regions script)
+- Execute script:  create_scenario.m 
 The resulting scenario is stored at:   ScenarioBuildings.mat
 
 Step 2) Add the BSs and compute the propagation losses:
